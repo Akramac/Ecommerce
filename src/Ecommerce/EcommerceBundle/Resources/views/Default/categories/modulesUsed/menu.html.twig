@@ -1,0 +1,17 @@
+{% for categorie in categories %}
+{% if categorie == 'Carpets' %}
+<li><a href="{{path('categorieProduits1',{'categorie': categorie.id})}}">{{categorie.nom}}  </a></li><p>||</p>
+{% endif %}
+
+{% if categorie == 'Accesories' %}
+<li><a href="{{path('categorieProduits2',{'categorie': categorie.id})}}">{{categorie.nom}}  </a></li><p>||</p>
+{% endif %}
+
+{% if categorie == 'Clutchs' %}
+<li><a href="{{path('categorieProduits3',{'categorie': categorie.id})}}">{{categorie.nom}}</a></li><p>||</p>
+{% endif %}
+
+{% if categorie == 'Foot Wear' %}
+<li><a href="{{path('categorieProduits4',{'categorie': categorie.id})}}">{{categorie.nom}}</a></li>
+{% endif %}
+{%endfor%}

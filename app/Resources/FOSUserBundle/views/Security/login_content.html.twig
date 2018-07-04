@@ -1,0 +1,51 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+{% if error %}
+    <div>{{ error|trans }}</div>
+{% endif %}
+<div class="row">
+
+          <div  class="accordion-body  in">
+            <div class="accordion-inner">
+                <div class="span4">
+                    <h4>Pas encore inscrit ?</h4>
+                    <em>
+                        nous vous invitons à vous inscrire
+                        afin de passer votre commande !
+                    </em>
+                    <br />
+                    <a href="{{ path('fos_user_registration_register') }}" class="btn btn-primary">S'inscrire</a>
+
+                </div>
+</div></div>
+                <div class="span8">
+                    <h4>Connexion</h4>
+                    <form action="{{ path("fos_user_security_check") }}" method="post">
+                        {% if csrf_token %}
+                            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                        {% endif %}
+
+                        <label for="username">{{ 'security.login.username'|trans }}</label>
+                        <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+                        <br>
+                        <label for="password">{{ 'security.login.password'|trans }}</label>
+                        <input type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+                        <br>
+                        <input class="btn btn-primary" type="submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                    </form>
+                </div>
+                </div>
+                <div class="row">
+                <div class="span10">
+                    <a href="{{ path('fos_user_resetting_request') }}">Mot de passe perdu ?</a>
+                </div>
+            </div>
+        </div>
+
+{% endblock fos_user_content %}

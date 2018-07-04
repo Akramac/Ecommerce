@@ -1,0 +1,85 @@
+{% extends '::base.html.twig'%}
+{% block body %}
+
+<div class="wrap-dollar-box dropdown">
+  <a href="javascript:void(0)"><i class="zmdi zmdi-money-box"></i><span class="selected-currency">USD</span><i class="zmdi zmdi-chevron-down"></i></a>
+  <div class="dollar-list dropdown-menu">
+    <ul id="currencies">
+
+
+      <li data-currency="USD">USD</li>
+
+      <li data-currency="EUR">EUR</li>
+
+      <li data-currency="GBP">GBP</li>
+
+    </ul>
+  </div>
+</div>
+
+
+</section>
+<div class="container">
+{%include '::ModulesUsed/navigation.html.twig'%}
+    <div class="row">
+
+
+
+    <div class="span9">
+      <div class="row">
+            <div class="span5">
+              <img src="https://cdn.shopify.com/s/files/1/2645/0874/products/Rainbow_Sandals_grande.jpg?v=1527372237" alt="Craftorm" width="170" height="250">
+            </div>
+            <div class="span4">
+               <h4> Item Description</h4>
+               <h5> Item Model S235 </h5>
+               <p>Colorful Slippers /// Beautiful Moroccan leather sandals 100% handmade </p>
+               <p>Beautiful Moroccan leather sandals 100% handmade .</p>
+               <p> The pretty colored braids give these sandals a touch of originality and show the Moroccan art of Design. </p>
+               <h4>Price :49 $</h4>
+               <form action="">
+
+                  <select name="qte" class="span1">
+                    <option>1</option>
+                  </select>
+
+                  <div>
+                     <button class="btn btn-primary"> Add to cart(panier)</button>
+                  </div>
+                </form>
+
+            </div>
+          </div>
+      </div>
+
+
+    <div class="span9">
+      <div class="row">
+            <div class="span5">
+              <img src="https://cdn.shopify.com/s/files/1/2645/0874/products/Rainbow_Sandals_grande.jpg?v=1527372237" alt="Craftorm" width="170" height="250">
+            </div>
+            <div class="span4">
+               <h4> Item Description</h4>
+               <h5>Model S235 </h5>
+               <p>Colorful Slippers /// Beautiful Moroccan leather sandals 100% handmade </p>
+               <p>Beautiful Moroccan leather sandals 100% handmade .</p>
+               <p> The pretty colored braids give these sandals a touch of originality and show the Moroccan art of Design. </p>
+               <h4>Price :49 $</h4>
+               <form action="">
+
+                  <select name="qte" class="span1">
+                    <option>1</option>
+                  </select>
+
+                  <div>
+                     <button class="btn btn-primary"> Add to cart(panier)</button>
+                  </div>
+                </form>
+
+            </div>
+          </div>
+      </div>
+
+     </div>
+</div>
+{% endblock %}

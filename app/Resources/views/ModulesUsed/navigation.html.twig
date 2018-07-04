@@ -1,0 +1,41 @@
+<div class="span3">
+  <div class="well1">
+</div>
+
+  <div class="well2">
+    <ul class="nav nav-list ">
+       <li>
+         <a class="welling1" href="http://localhost/symfony/web/app_dev.php/login">Se connecter &nbsp;</a>
+       </li>
+       <li>
+         <a class="welling2" href="http://localhost/symfony/web/app_dev.php/register/">S'inscrire</a>
+       </li>
+   </ul>
+  </div>
+
+  <div class="well3">
+    <ul class="nav nav-list">
+
+       <li class="nav-header">Our Products: </li>
+       <li class="active">
+       <br>
+         <a href="index.php">Sandals</a>
+       </li>
+       <li>
+       <br><br>
+         <a href="index.php">Rugs</a>
+       </li>
+       <li>
+       <br><br><br>
+         <a href="index.php">Clutchs</a>
+       </li>
+    </ul>
+   </div>
+
+   <div class="well">
+     <ul class="nav nav-list">
+        <li class="nav-header">Our Best Products: </li>
+        {{render(controller('EcommerceEcommerceBundle:Categories:menu'))}}
+     </ul>
+   </div>
+</div>

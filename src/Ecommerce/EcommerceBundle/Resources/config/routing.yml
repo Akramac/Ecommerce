@@ -1,0 +1,42 @@
+ecommerce_produits:
+    path:     /ecom
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:produits }
+ecommerce_presentation:
+    path:     /ecom/produit/{id}
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:presenta }
+ecommerce_panier:
+    path:     /ecom/panier
+    defaults: { _controller: EcommerceEcommerceBundle:Panier:panier }
+ecommerce_livraison:
+    path:     /ecom/livraison
+    defaults: { _controller: EcommerceEcommerceBundle:Panier:livraison }
+ecommerce_validation:
+    path:     /ecom/validation
+    defaults: { _controller: EcommerceEcommerceBundle:Panier:validation }
+ecommerce_test:
+    path:     /ecom/test
+    defaults: { _controller: EcommerceEcommerceBundle:Test:ajout }
+ecommerce_testForm:
+    path:     /ecom/testForm
+    defaults: { _controller: EcommerceEcommerceBundle:Test:testFormulaire }
+ecommerce_taskForm:
+    path:     /ecom/taskForm
+    defaults: { _controller: EcommerceEcommerceBundle:Task:reg }
+categorieProduits1:
+    path:     /categorie/80
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:categorie1 }
+categorieProduits2:
+    path:     /categorie/81
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:categorie2 }
+categorieProduits3:
+    path:     /categorie/82
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:categorie3 }
+categorieProduits4:
+    path:     /categorie/83
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:categorie4 }
+ecommerce_ajouter:
+    path:    /ecom/ajouter/{id}
+    defaults: { _controller: EcommerceEcommerceBundle:Panier:ajouter }
+ecommerce_supprimer:
+    path:    /ecom/supprimer/{id}
+    defaults: { _controller: EcommerceEcommerceBundle:Panier:supprimer }

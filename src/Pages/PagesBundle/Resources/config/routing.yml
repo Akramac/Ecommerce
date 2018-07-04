@@ -1,0 +1,3 @@
+pages_pages_homepage:
+    path:     /
+    defaults: { _controller: PagesPagesBundle:Default:index }

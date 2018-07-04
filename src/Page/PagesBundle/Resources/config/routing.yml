@@ -1,0 +1,3 @@
+page_pages_homepage:
+    path:     /
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:produits }

@@ -1,0 +1,53 @@
+{% extends '::base.html.twig'%}
+{% block body %}
+
+<div class=" dropdown">
+  <a href="#"><span class=" dropdown-toggle" data-toggle="dropdown">USD</span</a>
+
+    <ul id="currencies" class="dropdown-menu">
+
+
+      <li data-currency="USD">USD</li>
+
+      <li data-currency="EUR">EUR</li>
+
+      <li data-currency="GBP">GBP</li>
+
+    </ul>
+
+</div>
+
+
+</section>
+
+<div class="container">
+{%include '::ModulesUsed/navigation.html.twig'%}
+    <div class="row">
+        <div class="span9">
+          <div class="row">
+                <div class="span5">
+                  <img src="{{produit.image}}" alt="Craftorm" width="170" height="250">
+                </div>
+                <div class="span4">
+                   <h4>{{produit.nom}}</h4>
+                   <h5>{{produit.categorie}}</h5>
+                   <p>{{produit.description}}</p>
+                   <p>{{ produit.prix }} $</p>
+                   <form action="{{path('ecommerce_ajouter',{'id':produit.id})}}" method='get'>
+                      <select name="qte" class="span1">
+                        {%for i in 1..10 %}
+                        <option value='{{i}}'>{{i}}</option>
+                        {%endfor%}
+                      </select>
+
+                      <div>
+                         <button class="btn btn-primary"> Add to cart(panier)</button>
+                      </div>
+                    </form>
+
+                </div>
+              </div>
+          </div>
+     </div>
+</div>
+{% endblock %}

@@ -1,0 +1,4 @@
+services:
+#    plog_user.example:
+#        class: Plog\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

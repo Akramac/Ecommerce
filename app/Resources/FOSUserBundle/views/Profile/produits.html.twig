@@ -1,0 +1,125 @@
+{% extends '::base.html.twig'%}
+{% block body %}
+
+
+<section class="header-v3">
+  <div id="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <a class="facebook" href="https://www.facebook.com/zestormz/" title="Social 1"><i class="zmdi zmdi-facebook"></i></a>
+         <a class="instagram" href="https://www.instagram.com/craftorm/" title="Social 3"><i class="zmdi zmdi-instagram"></i></a>
+        <a class="google" href="https://www.gmail.com/"><i class="zmdi zmdi-google-glass"></i></a>
+      </div>
+      <!-- End topBar-left -->
+      <div class="topbar-right">
+
+<div class="wrap-dollar-box dropdown">
+  <a href="javascript:void(0)"><i class="zmdi zmdi-money-box"></i><span class="selected-currency">USD</span><i class="zmdi zmdi-chevron-down"></i></a>
+  <div class="dollar-list dropdown-menu">
+    <ul id="currencies">
+
+
+      <li data-currency="USD">USD</li>
+
+      <li data-currency="EUR">EUR</li>
+
+      <li data-currency="GBP">GBP</li>
+
+    </ul>
+  </div>
+</div>
+
+
+</section>
+<div class="container">
+{%include '::ModulesUsed/navigation.html.twig'%}
+    <div class="row">
+
+
+
+        <div class="span9">
+          <div class="row">
+                <div class="span5">
+                  <img src="https://cdn.shopify.com/s/files/1/2645/0874/products/Rainbow_Sandals_grande.jpg?v=1527372237" alt="Craftorm" width="170" height="250">
+                </div>
+                <div class="span4">
+                   <h4> Item Brand and Categories</h4>
+                   <h5> Item Model S235 </h5>
+                   <p>Colorful Slippers /// Beautiful Moroccan leather sandals 100% handmade </p>
+                   <h4>Price :49 $</h4>
+                   <form>
+
+                      <select name="qte" class="span1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      </select>
+
+                      <div>
+                         <a class="btn btn-primary colo" href="{{path('ecommerce_presentation')}}"> More Details(voir plus)</a>
+                         <a class="btn btn-primary" href="{{path('ecommerce_panier')}}"> Add to cart(panier)</a>
+                      </div>
+                    </form>
+
+                </div>
+              </div>
+          </div>
+          <div class="span9">
+            <div class="row">
+                  <div class="span5">
+                    <img src="https://cdn.shopify.com/s/files/1/2645/0874/products/product-image-518647863_grande.jpg?v=1527372233" alt="Craftorm" width="170" height="250">
+                  </div>
+                  <div class="span4">
+                     <h4> Item Brand and Categories</h4>
+                     <h5> Item Model S236 </h5>
+                     <p>14 COLORS BACKPACK 100% GENUINE LEATHER BACKPACKS </p>
+                     <h4>Price :115.80 $</h4>
+                     <form action="panier.php">
+
+                        <select name="qte" class="span1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+
+                        <div>
+                           <button class="btn btn-primary colo"> More Details(voir plus)</button>
+                           <button class="btn btn-primary"> Add to cart(panier)</button>
+                        </div>
+                      </form>
+
+                  </div>
+                </div>
+            </div>
+
+            <div class="span9">
+              <div class="row">
+                    <div class="span5">
+                      <img src="https://cdn.shopify.com/s/files/1/2645/0874/products/il_570xN.1441312523_d7wp.jpg?v=1527372238" alt="Craftorm" width="170" height="250">
+                    </div>
+                    <div class="span4">
+                       <h4> Item Brand and Categories</h4>
+                       <h5> Item Model S237 </h5>
+                       <p><pre>DECORATIVE MOROCCAN PILLOW COVER - HANDMADE KILIM RUG - HANDSTITCHING
+                       - NO ZIPPERS - 16 "X 20" (41CM X 51CM)</pre></p>
+                       <h4>Price :70.30 $</h4>
+                       <form action="panier.php">
+
+                          <select name="qte" class="span1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          </select>
+
+                          <div>
+                             <button class="btn btn-primary colo"> More Details(voir plus)</button>
+                             <button class="btn btn-primary"> Add to cart(panier)</button>
+                          </div>
+                        </form>
+
+                    </div>
+                  </div>
+              </div>
+     </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+blog_general_homepage:
+    path:     /hello
+    defaults: { _controller: BlogGeneralBundle:Default:index }
+    requirements:
+        _format: html|json
+
+ecommerce_testForm:
+    path:     /taskForm
+    defaults: { _controller: BlogGeneralBundle:Task:reg }

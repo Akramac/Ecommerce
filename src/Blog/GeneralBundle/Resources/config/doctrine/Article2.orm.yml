@@ -1,0 +1,22 @@
+Blog\GeneralBundle\Entity\Article2:
+    type: entity
+    table: null
+    repositoryClass: Blog\GeneralBundle\Repository\Article2Repository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        content:
+            type: text
+        date:
+            type: datetime
+        author:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

@@ -1,0 +1,59 @@
+{% extends '::base.html.twig'%}
+{% block body %}
+
+<section>
+
+<div class=" dropdown">
+  <a href="#"><span class=" dropdown-toggle" data-toggle="dropdown">USD</span</a>
+
+    <ul id="currencies" class="dropdown-menu">
+
+
+      <li data-currency="USD">USD</li>
+
+      <li data-currency="EUR">EUR</li>
+
+      <li data-currency="GBP">GBP</li>
+
+    </ul>
+</div>
+
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="span3">
+            {% include '::modulesUsed/navigation.html.twig' %}
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                {% include 'UtilisateursUtilisateursBundle:Default:modulesUsed/utilisateursConnecte.html.twig' %}
+            {% else %}
+                {% include 'UtilisateursUtilisateursBundle:Default:modulesUsed/utilisateurs.html.twig' %}
+            {% endif %}
+
+</div>
+
+<div class="span9 est">
+                <ul class="thumbnails">
+                {% for produit in produits %}
+                    <li class="span3">
+                        <div class="thumbnail ">
+                            <img src="{{produit.image}}" alt="Searching" width="300" height="150">
+                            <div class="caption">
+                                <h4>{{ produit.nom }}</h4>
+                                <h4>{{produit.prix}} $</h4>
+                                <a class="btn btn-primary" href="{{path('ecommerce_presentation',{'id':produit.id})}}">Plus d'infos</a>
+                                {{ produit.id }}
+                                {% if panier[produit.id] is not defined %}
+                                    <a class="btn btn-success" href="{{path('ecommerce_ajouter',{'id':produit.id})}}">Ajouter au panier</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </li>
+              {% endfor %}
+                </ul>
+
+</div>
+</div>
+</div>
+</section>
+{% endblock %}

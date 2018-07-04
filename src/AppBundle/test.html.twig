@@ -1,0 +1,17 @@
+
+{%set i =1%}
+{%for produit in produits%}
+<section>
+<ul>
+    <li>{{i}}.{{produit.nom}}</li>
+    <li>{{produit.categorie}}</li>
+    <li>{{produit.description}}</li>
+    <li>{{produit.disponible}}</li>
+    <li>{{produit.image}}</li>
+    <li>{{produit.prix}}</li>
+    <li>{{produit.tva}}</li>
+
+    {%set i=i+1%}
+</ul>
+</section>
+{%endfor%}

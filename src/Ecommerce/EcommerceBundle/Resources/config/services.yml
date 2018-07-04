@@ -1,0 +1,21 @@
+services:
+#    ecommerce_ecommerce.example:
+#        class: Ecommerce\EcommerceBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+# Fixtures services
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\MediaData:
+        tags: [doctrine.fixture.orm]
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\CategoriesData:
+        tags: [doctrine.fixture.orm]
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\TvaData:
+        tags: [doctrine.fixture.orm]
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\PoduitData:
+        tags: [doctrine.fixture.orm]
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\UtilisateursData:
+        tags: [doctrine.fixture.orm]
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\UtilisateursAdressesData:
+        tags: [doctrine.fixture.orm]
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\CommandesData:
+        tags: [doctrine.fixture.orm]
+    Ecommerce\EcommerceBundle\DataFixtures\ORM\ProduitsData:
+        tags: [doctrine.fixture.orm]
