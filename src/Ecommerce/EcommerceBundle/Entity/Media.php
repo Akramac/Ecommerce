@@ -39,7 +39,7 @@ class Media
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -62,7 +62,7 @@ class Media
     /**
      * Get path
      *
-     * @return string 
+     * @return string
      */
     public function getPath()
     {
@@ -85,7 +85,7 @@ class Media
     /**
      * Get alt
      *
-     * @return string 
+     * @return string
      */
     public function getAlt()
     {
