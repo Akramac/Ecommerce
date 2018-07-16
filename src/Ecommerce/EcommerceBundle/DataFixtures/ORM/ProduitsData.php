@@ -27,7 +27,7 @@ class ProduitsData extends AbstractFixture implements OrderedFixtureInterface
        $Produit2 =new Produits();
        $Produit2->setCategorie($this->getReference('categorie2'));
        $Produit2->setDescription(' Type: Cow LeatherStyle: VintageItem Height: 19cmItem Length: 10cmItem Weight: 0.26Item Width: 2.2cm');
-       $Produit2->setNom('Design fashion purse');
+       $Produit2->setNom('Design FASHION PURSE');
        $Produit2->setPrix('80');
        $Produit2->setTva('20');
        $Produit2->setDisponible('1');
